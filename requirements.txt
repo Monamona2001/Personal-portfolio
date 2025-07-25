@@ -4,3 +4,4 @@ django
 gunicorn
 django-admin-rangefilter
 pycryptodome
+whitenoise

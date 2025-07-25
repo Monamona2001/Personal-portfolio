@@ -1,0 +1,6 @@
+google.generativeai
+pymupdf
+django
+gunicorn
+django-admin-rangefilter
+pycryptodome

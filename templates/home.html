@@ -1,0 +1,421 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monali Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playball&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+</head>
+
+<body>
+    <div class="star-cursor">⭐</div>
+    <header>
+        <div class="logo">Monali</div>
+        <nav id="navbar">
+            <ul id="nav-links">
+                <li><a href="#home"></a>Home</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Career</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+            <div id="hamburger">&#9776;</div>
+        </nav>
+
+
+        <button id="mode-toggle" class="light">🌙</button>
+    </header>
+
+
+
+    <section class="container" id="home">
+        <div class="content">
+            <div class="name-badge">Monali Maheswata Mohanty</div>
+            <h1>I'm a <span class="element"></span></h1>
+            <p>Experienced backend developer with a passion for creating visually stunning and user-friendly websites.
+            </p>
+            <div class="buttons">
+                <button class="hire-btn">Hire Me</button>
+                <button class="cv-btn"><a href="../static/Monali Resume.pdf" download>Download CV</a> <i
+                        class="fa-solid fa-file"></i></button>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/monali-maheswata-mohanty/" target="_blank"><i
+                        class="fab fa-linkedin-in" target="_blank"></i></a>
+                <a href="https://www.google.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                <a href="https://github.com/Monamona2001" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <img src="../static/monali.jpg" alt="Monali" class="profile-img">
+            <!-- Replace the above src with your actual image path -->
+        </div>
+    </section>
+
+
+
+
+
+    <div class="scroll-button">
+        <a href="#about">
+            <button><i class="fas fa-computer-mouse"></i>scroll down</button>
+        </a>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+
+            <!-- Left: Intro Card -->
+            <div class="card">
+                <h3>My Introduction</h3>
+                <p>
+                    A highly motivated and detail-oriented Python Developer (Fresher) with a strong foundation in
+                    programming,
+                    data structures, and web development. Proficient in Python with hands-on experience in building
+                    small to
+                    mid-scale projects, including web applications using Django.
+                    Enthusiastic about solving real-world problems through code and continuously learning new
+                    technologies.
+                    A quick learner with good problem-solving skills and the ability to work collaboratively in team
+                    environments.
+                </p>
+                <button class="download-btn"><a href="../static/Monali Resume.pdf" download>Download CV</a> <i
+                        class="fas fa-download"></i></button>
+            </div>
+
+            <!-- Right: Skills -->
+            <div class="card">
+                <div class="skills-box">
+                    <div class="skill-category">
+                        <h4>FRONTEND <i class="fas fa-desktop"></i></h4>
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">Js</div>
+                        <div class="skill">Bootstrap</div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>BACKEND <i class="fas fa-server"></i></h4>
+                        <div class="skill">Python</div>
+                        <div class="skill">Django</div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>DATABASE <i class="fas fa-database"></i></h4>
+                        <div class="skill">MySQL</div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>SKILLS <i class="fa-solid fa-laptop-code"></i></h4>
+                        <div class="skill">GIT</div>
+                        <div class="skill">GIT-HUB</div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="projects-heading">My <span class="p_name">Projects</span></h1>
+        <p class="projects-description">
+            Here are some of my recent projects. Each one was carefully crafted to solve specific problems and deliver
+            value.
+        </p>
+
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <video src="../static/video.mp4" autoplay muted loop playsinline></video>
+                <div class="project-content">
+                    <h3>Cafe Management System</h3>
+                    <p>A full-featured system to handle café operations including menu management, cart, online orders,
+                        and payments.
+                        It offers user authentication, order tracking, and a smooth checkout experience with integrated
+                        payment gateways.
+                    </p>
+                    <div class="tech-tags">
+                        <span>Django</span><span>HTML</span><span>CSS</span><span>JS</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <video src="../static/music.mp4" autoplay muted loop playsinline></video>
+                <div class="project-content">
+                    <h3>Music App</h3>
+                    <p>A responsive music streaming web app that lets users explore, play, and manage playlists.
+                        It features a user-friendly interface, song search, and playback controls for a seamless
+                        listening experience.</p>
+                    <div class="tech-tags">
+                        <span>HTML</span><span>CSS</span><span>JS</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <video src="../static/car.mp4" autoplay muted loop playsinline></video>
+                <div class="project-content">
+                    <h3>Car Rental App</h3>
+                    <p>A web-based platform that allows users to browse, book, and manage car rentals with real-time
+                        availability.
+                        It includes user registration, vehicle listings, booking history, and admin management features.
+                    </p>
+                    <div class="tech-tags">
+                        <span>HTML</span><span>CSS</span><span>Django</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="timeline-section" id="education">
+        <h2 class="section-title"><span>My</span> <span class="highlight">Career</span></h2>
+        <p class="section-subtitle">
+            My professional path and educational background that shaped my expertise.
+        </p>
+        <h2 class="e_logo"><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+        <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>MCA</h3>
+                    <h4 class="institution">CIME <span class="year">2023 - 2025</span></h4>
+                    <p>
+                        I hold a Master of Computer Applications (MCA), where I gained a solid foundation in software
+                        development,
+                        programming languages, and web technologies.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Bsc.</h3>
+                    <h4 class="institution">Govt. Women's college <span class="year">2018 - 2021</span></h4>
+                    <p>
+                        I completed my graduation with honors in Geology, which sharpened my analytical and research
+                        skills.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Intermediate</h3>
+                    <h4 class="institution">KBRC <span class="year">2016 - 2018</span></h4>
+                    <p>
+                        I also successfully completed my Intermediate education with a strong academic record, laying
+                        the groundwork
+                        for my technical and logical abilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <p class="section-subtitle">
+            Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+        </p>
+
+        <div class="contact-container">
+            <!-- Left: Contact Information -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <i class="fas fa-envelope icon"></i>
+                    <div>
+                        <strong>Email</strong><br>
+                        monalimohanty200@gmail.com
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone icon"></i>
+                    <div>
+                        <strong>Phone</strong><br>
+                        8599094263
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <div>
+                        <strong>Location</strong><br>
+                        Bhubaneswar,Odisha
+                    </div>
+                </div>
+                <h4>Follow Me</h4>
+                <div class="social-icons">
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/monali-maheswata-mohanty/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="https://github.com/Monamona2001" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form method="post" action="contact/">
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="text" name="subject" placeholder="Enter subject" required>
+                    <textarea name="message" rows="5" placeholder="Enter your message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Column 1 -->
+            <div class="footer-about">
+                <h2>Monali Maheswata Mohanty</h2>
+                <p>Full Stack Developer creating digital experiences that make an impact.</p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Career</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Django</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-social">
+                <h3>Connect</h3>
+                <div class="icons">
+                    <a href="https://github.com/Monamona2001" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/monali-maheswata-mohanty/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>monalimohanty200@gmail.com</p>
+            </div>
+        </div>
+
+        <hr />
+        <p class="footer-bottom">© 2025 Monali. All rights reserved.
+            <br> Designed & Developed with 💻 & ❤️
+        </p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- Typed.js Initialization -->
+    <script>
+
+        const star = document.querySelector('.star-cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            star.style.left = e.clientX + 'px'; // Use clientX (viewport-based)
+            star.style.top = e.clientY + 'px';
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var typed = new Typed(".element", {
+                strings: ["Python Developer", "Django Developer", "Backend Engineer"],
+                typeSpeed: 60,
+                backSpeed: 40,
+                loop: true
+            });
+        });
+
+
+        document.getElementById("hamburger").addEventListener("click", function () {
+            document.getElementById("nav-links").classList.toggle("active");
+        });
+
+        // Dark Mode Toggle
+        const modeToggle = document.getElementById("mode-toggle");
+        const body = document.body;
+
+        // Check if mode is already saved
+        if (localStorage.getItem("mode") === "dark") {
+            body.classList.add("dark-mode");
+            modeToggle.textContent = "☀️";
+        }
+
+        modeToggle.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+
+            if (body.classList.contains("dark-mode")) {
+                modeToggle.textContent = "☀️";
+                localStorage.setItem("mode", "dark");
+            } else {
+                modeToggle.textContent = "🌙";
+                localStorage.setItem("mode", "light");
+            }
+        });
+    </script>
+
+
+    
+
+</body>
+
+</html>
